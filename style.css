@@ -1,0 +1,70 @@
+body {
+  background: #ddd;
+}
+
+.container {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.container:not(:last-child) {
+  margin-bottom: 20px;
+  
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}
+
+.violet {
+  background-color: purple;
+}
+
+.rect, .square {
+  width: 120px;
+}
+
+.rect {
+  aspect-ratio: 16/9;
+}
+
+.square {
+  aspect-ratio: 1/1;
+}
+
+.w-xs {
+  width: 60px;
+}
+
+.w-lg {
+  width: 400px;
+}
+
+.w-xl {
+  width: 1200px
+}
+
