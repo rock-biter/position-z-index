@@ -9,19 +9,51 @@
 </head>
 <body>
   1
-  <div class="container live-1 ">
+  <div class="container live-1 relative">
+    <div class="red rect w-lg relative">
+      <div class="square blue w-xs"></div>
+      <div class="green square w-xs absolute"></div>
+    </div>
   </div>
 
   2
   <div class="container live-2">
+    <div class="red relative square w-lg">
+      <div class="square blue"></div>
+      <div class="square absolute blue"></div>
+      <div class="square absolute blue">
+        <div class="square absolute green"></div>
+      </div>
+    </div>
   </div>
 
   3
   <div class="container live-3">
+    <div class="green rect w-xl">
+      <div class="blue relative square w-lg">
+        <div class="red square w-xs"></div>
+        <div class="red absolute square w-xs"></div>
+      </div>
+      <div class="blue relative square w-lg">
+        <div class="red square w-xs"></div>
+        <div class="red square relative w-xs"></div>
+        <div class="red square relative w-xs"></div>
+      </div>
+    </div>
   </div>
 
   4
   <div class="container live-4">
+    <div class="square purple fixed"></div>
+  </div>
+
+  <div class="container hover">
+    <div class="card">
+
+      <div> immagine 1</div>
+      <div> immagine 2</div>
+
+    </div>
   </div>
   
 </body>

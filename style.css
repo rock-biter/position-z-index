@@ -1,5 +1,7 @@
 body {
   background: #ddd;
+  margin: 0;
+  padding: 20px;
 }
 
 .container {
@@ -9,7 +11,6 @@ body {
 
 .container:not(:last-child) {
   margin-bottom: 20px;
-  
 }
 
 .relative {
@@ -40,12 +41,12 @@ body {
   background-color: red;
 }
 
-.violet {
+.purple {
   background-color: purple;
 }
 
 .rect, .square {
-  width: 120px;
+  width: 100px;
 }
 
 .rect {
@@ -61,10 +62,103 @@ body {
 }
 
 .w-lg {
-  width: 400px;
+  width: 300px;
 }
 
 .w-xl {
-  width: 1200px
+  width: 900px
+}
+
+.live-1 .square.green {
+  bottom: 0;
+  left: 100%;
+}
+
+.live-2 .square.blue:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.live-2 .square.blue:nth-child(3) {
+  right: 0;
+  bottom: 0;
+}
+
+.live-2 .square.green {
+  right: 20px;
+  bottom: 20px;
+}
+
+
+.live-3 .square.blue {
+  display: inline-block;
+}
+
+.live-3 .square.blue:first-child .square.red:last-child {
+  bottom: 0;
+  right: 0;
+}
+
+.live-3 .square.blue:last-child .square.red:nth-child(2) {
+  left: 20px;
+}
+
+.live-4 .fixed {
+  top: 0;
+  right: 0;
+}
+
+/* hover */
+
+.card {
+  display: inline-block;
+  width: 33.33%;
+  background-color: #ddd;
+  position: relative;
+}
+
+.card > div {
+  border: 1px solid;
+  padding: 30px;
+  position: relative;
+  top: 0;
+  background: pink;
+
+}
+
+.card:hover {
+  background-color: #666;
+}
+
+.card:hover div {
+  border-color: red;
+}
+
+.card div:hover {
+  color: blue;
+}
+
+/* .card:hover div:first-child {
+  display: none;
+} */
+.card div:first-child {
+  /* top: 20px;
+  left: 20px; */
+  z-index: 5;
+}
+
+
+/* .card div:first-child:hover {
+  display: none;
+} */
+
+.card:hover div:first-child {
+  /* display: none; */
+  visibility: hidden;
+}
+
+.card div:last-child {
+  position: absolute;
+  top: 0;
 }
 
